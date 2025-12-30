@@ -1,62 +1,33 @@
-\# 🧅 Tor Scraper (CTI Collection Tool)
+# 🧅 Tor Scraper (CTI Collection Tool)
 
+**Tor Scraper** is a **Go (Golang)** based tool developed to automate the **Collection** phase of Cyber Threat Intelligence (CTI) processes.
 
+This tool anonymously visits specified **.onion domains or IP addresses** via the **Tor network (SOCKS5 Proxy)**, archives their **source code**, and reports their **accessibility status**.
 
-\*\*Tor Scraper\*\*, siber tehdit istihbaratı (CTI) süreçlerinde "Collection" (Veri Toplama) aşamasını otomatize etmek için geliştirilmiş Go tabanlı bir araçtır. 
+---
 
+## 🚀 Features
 
+- **Tor Proxy Integration**  
+  All traffic is routed through the Tor network (IP leak protection).
 
-Bu araç, belirlenen .onion uzantılı hedefleri veya IP adreslerini Tor ağı (SOCKS5 Proxy) üzerinden anonim olarak ziyaret eder, kaynak kodlarını arşivler ve erişim durumlarını raporlar.
+- **OpSec (Operational Security)**  
+  Uses User-Agent spoofing to behave like a regular web browser.
 
+- **Fault Tolerance**  
+  Detects unreachable (dead) sites, logs them, and continues scanning.
 
+- **Reporting & Archiving**  
+  Stores scan results as detailed log files and HTML outputs.
 
-\## 🚀 Özellikler
+---
 
-\- \*\*Tor Proxy Entegrasyonu:\*\* Tüm trafik Tor ağı üzerinden geçer (IP Sızıntısı Koruması).
+## 🛠️ Installation
 
-\- \*\*OpSec (Operasyonel Güvenlik):\*\* User-Agent spoofing ile kendini normal bir tarayıcı gibi gösterir.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/bugrakaanalp/Go-Tor-Scraper-CTI.git
+cd TorScraper
+```
 
-\- \*\*Hata Toleransı:\*\* Kapanmış (dead) siteleri tespit eder, loglar ve taramaya devam eder.
-
-\- \*\*Raporlama:\*\* Tarama sonuçlarını detaylı bir log dosyasına ve HTML formatında arşivler.
-
-
-
-\## 🛠️ Kurulum
-
-
-
-1\. Bu depoyu klonlayın:
-
-&nbsp;  ```bash
-
-&nbsp;  git clone https://github.com/bugrakaanalp/Go-Tor-Scraper-CTI.git
-
-&nbsp;  cd TorScraper
-
-
-2. Gerekli kütüphaneyi indirin:
-
-&nbsp;  ```bash
-   go get golang.org/x/net/Proxy
-
-
-
-3\. Tor Servisinin (veya Tor Browser) çalıştığından emin olun (Port: 9150 veya 9050).
-
-
-
-\## 💻 Kullanım
-
-1. targets.yaml dosyasına hedef URL'leri ekleyin.
-
-2. Aracı çalıştırın:
-   ```bash
-   go run main.go
-
-Sonuçlar scraped\_data/ klasörüne kaydedilecektir.
-
-## ⚠️ Yasal Uyarı
-
-Bu araç sadece \*\*eğitim ve siber güvenlik araştırmaları\*\* (CTI) amacıyla geliştirilmiştir. Yasadışı amaçlarla kullanılması durumunda sorumluluk kullanıcıya aittir.
-
+### 2️⃣ Install Required Dependency  
