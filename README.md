@@ -31,3 +31,30 @@ cd TorScraper
 ```
 
 ### 2️⃣ Install Required Dependency  
+````bash
+go get golang.org/x/net/proxy
+````
+
+### 3️⃣ Ensure Tor Service Is Running
+
+Make sure Tor Service or Tor Browser is running.
+
+Default ports:
+9050 (Tor Service)
+9150 (Tor Browser)
+
+### 💻 Usage
+
+Add target URLs or IP addresses to the targets.yaml file.
+
+Run the tool:
+````bash
+go run main.go
+````
+
+📁 Scan results will be saved to the scraped_data/ directory.
+
+### ⚠️ Legal Disclaimer
+
+This tool is developed strictly for educational and cybersecurity research (CTI) purposes.
+Any illegal or unauthorized use is solely the responsibility of the user.
