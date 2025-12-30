@@ -1,0 +1,10 @@
+# Derlenmiş dosyalar
+*.exe
+*.dll
+
+# Log ve Veri dosyaları
+scraped_data/
+scan_report.log
+
+# Hedef listesi
+# targets.yaml
